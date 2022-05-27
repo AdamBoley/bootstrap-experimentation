@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bb77ddf0c5.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Beergate | Explore new beers every week</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Beergate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <!--data-bs-toggle sets the button to collapse and uncollapse some element, data-bs-target sets the element id to collapse-->
+                <span class="navbar-toggler-icon"></span>
+                <!--navbar-toggler-icon is the burger icon-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarItems">
+                <!--This is the element that will be collapsed by the button-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beers</a>
+                        <!--data-bs-toggle is now set to dropdown, so it knows to expand a dropdown menu-->
+                        <!--No data-bs-target is needed, since the button that is clicked is the element itself-->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="/" class="dropdown-item">British Real Ale</a>
+                            <a href="/" class="dropdown-item">German Lager</a>
+                            <a href="/" class="dropdown-item">Belgian Wheat beer</a>
+                            <a href="/" class="dropdown-item">American Craft beer</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a href="#" class="nav-link">Sign In / Sign up</a>
+                    </li>
+                </ul>
+                <p class="navbar-text my-auto mr-2 me-2 d-none d-lg-inline"><i>Great real ale delivered to your gate</i></p>
+                <a href="/login" class=" d-none d-lg-inline">Sign In / Sign up</a>
+            </div>
+        </div>
+      </nav>
+    <article class="container mt-3">
+        <div class="row d-none d-sm-block">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <p><strong>Sale Now On!</strong> Get 12 months' supply of beer for the price of 1 for Labour voters, and 1 months' supply for the price of 12 for Tory voters</p>
+                    <a href="/">Click here for details!</a>
+                    <p><small>Be honest, Tories, you can afford it</small></p>
+                </div>
+            </div>
+        </div>
+        <!--callout-->
+        <div class="row">
+            <div class="col-12">
+                <section class="callout p-5 mb-4 bg-light rounded-3 text-center">
+                    <!--p-5 mb-4 bg-light rounded-3 replicates the jumbotron effect from Bootstrap 4-->
+                    <h1>The best beers delivered direct to your gate</h1>
+                    <p class="lead">Sign up today to start recieving a selection of curated beers every week.
+                        <s class="d-none d-sm-inline">$20.22</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark> First one is on us!</mark></strong>
+                    </p>
+                    <!--strong and mark bold and highlight the text, s tags apply the strike-through style-->
+                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up!</button>
+                    <!--the btn and btn-success class style a basic button that also provides user-feedback-->
+                    <p class="text-muted"><small>You must be over the age of 12, and not a Tory voter. Please drink very
+                            irresponsibly</small></p>
+                    <!--the small tag reduced font size good for legal text, etc-->
+                </section>
+            </div>
+        </div>
+        <!--/callout-->
+        <hr>
+        <!--quotes-->
+        <section class="quotes">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Quotes:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 me-3 d-none d-sm-block">
+                            <img src="images/ks.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>I've been turned into a certified beer lover! Goes well with a chicken korma before returning to
+                                work</p>
+                            <p>- Kier Starmer</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 me-3 d-none d-sm-block">
+                            <img src="images/bj.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>Beer is for plebs - I prefer wine and cheese personally, preferably at 4pm every Friday during a
+                                lockdown</p>
+                            <p>- Boris Johnson</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/quotes-->
+        <hr>
+        <!--features-->
+        <section class="features">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Features</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge bg-success">NEW!</span></h3>
+                        <p>Serious Starmer would make a good PM</p>
+                        <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                        <p>Bodger is useless</p>
+                        <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none d-lg-block col-lg-4">
+                    <div class="feature">
+                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
+                        <p>Every Tory is a criminal</p>
+                        <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/features-->
+        <!--table-->
+        <section class="top-five">
+            <h2 class="text-uppercase">Top 5 beers</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Beer</th>
+                        <th scope="col">Producer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Golden Champion</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Ghost Ship</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Hoegaarden</td>
+                        <td>Belgium</td>
+                    </tr>
+                    <tr>
+                        <td>Russian Tears</td>
+                        <td>Ukraine</td>
+                    </tr>
+                    <tr>
+                        <td>Fascism</td>
+                        <td>The Conservative Party</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--/table-->
+    </article>
+
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <!-- commented out because the modal footer only contains a submit button, which is already included in the form
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                -->
+            </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
