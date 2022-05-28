@@ -9,7 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bb77ddf0c5.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Beergate | Explore new beers every week</title>
 </head>
 
@@ -17,7 +17,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Beergate</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <!--data-bs-toggle sets the button to collapse and uncollapse some element, data-bs-target sets the element id to collapse-->
                 <span class="navbar-toggler-icon"></span>
                 <!--navbar-toggler-icon is the burger icon-->
@@ -32,7 +33,8 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beers</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beers</a>
                         <!--data-bs-toggle is now set to dropdown, so it knows to expand a dropdown menu-->
                         <!--No data-bs-target is needed, since the button that is clicked is the element itself-->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,34 +48,45 @@
                         <a href="#" class="nav-link">Sign In / Sign up</a>
                     </li>
                 </ul>
-                <p class="navbar-text my-auto mr-2 me-2 d-none d-lg-inline"><i>Great real ale delivered to your gate</i></p>
+                <p class="navbar-text my-auto mr-2 me-2 d-none d-lg-inline"><i>Great real ale delivered to your gate</i>
+                </p>
                 <a href="/login" class=" d-none d-lg-inline">Sign In / Sign up</a>
             </div>
         </div>
-      </nav>
-    <article class="container mt-3">
+    </nav>
+    <div class="container alert-container">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
-                    <p><strong>Sale Now On!</strong> Get 12 months' supply of beer for the price of 1 for Labour voters, and 1 months' supply for the price of 12 for Tory voters</p>
+                    <p><strong>Sale Now On!</strong> Get 12 months' supply of beer for the price of 1 for Labour voters,
+                        and 1 months' supply for the price of 12 for Tory voters</p>
                     <a href="/">Click here for details!</a>
                     <p><small>Be honest, Tories, you can afford it</small></p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid callout-container">
         <!--callout-->
-        <div class="row">
+        <div class="opaque-overlay">&nbsp;</div>
+        <!--&nbsp; is the unicode for a space, just to give the div some content-->
+        <!--opaque-overlay darkens off the background image, but also darkens the content below as it is higher in the DOM-->
+        <!--Compensate for this by making standout and opaque-overlay sibling elements and giving standout a higher z-index-->
+        <!--This darkens the background image, but leave the text unaffected-->
+        <div class="row standout">
             <div class="col-12">
-                <section class="callout p-5 mb-4 bg-light rounded-3 text-center">
+                <section class="callout p-5 mb-4 bg-transparent rounded-3 text-center">
                     <!--p-5 mb-4 bg-light rounded-3 replicates the jumbotron effect from Bootstrap 4-->
-                    <h1>The best beers delivered direct to your gate</h1>
+                    <h1 class="jumbotron-header">The best beers delivered direct to your gate</h1>
+                    <hr class="spacer">
                     <p class="lead">Sign up today to start recieving a selection of curated beers every week.
                         <s class="d-none d-sm-inline">$20.22</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark> First one is on us!</mark></strong>
                     </p>
                     <!--strong and mark bold and highlight the text, s tags apply the strike-through style-->
-                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up!</button>
+                    <button class="btn call-to-action button-red btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign
+                        Up!</button>
                     <!--the btn and btn-success class style a basic button that also provides user-feedback-->
                     <p class="text-muted"><small>You must be over the age of 12, and not a Tory voter. Please drink very
                             irresponsibly</small></p>
@@ -81,8 +94,10 @@
                 </section>
             </div>
         </div>
+        
         <!--/callout-->
-        <hr>
+    </div>
+    <div class="container quotes-container">
         <!--quotes-->
         <section class="quotes">
             <div class="row">
@@ -97,7 +112,8 @@
                             <img src="images/ks.jpg" alt="" class="img-thumbnail">
                         </div>
                         <blockquote class="blockquote">
-                            <p>I've been turned into a certified beer lover! Goes well with a chicken korma before returning to
+                            <p>I've been turned into a certified beer lover! Goes well with a chicken korma before
+                                returning to
                                 work</p>
                             <p>- Kier Starmer</p>
                         </blockquote>
@@ -109,7 +125,8 @@
                             <img src="images/bj.jpg" alt="" class="img-thumbnail">
                         </div>
                         <blockquote class="blockquote">
-                            <p>Beer is for plebs - I prefer wine and cheese personally, preferably at 4pm every Friday during a
+                            <p>Beer is for plebs - I prefer wine and cheese personally, preferably at 4pm every Friday
+                                during a
                                 lockdown</p>
                             <p>- Boris Johnson</p>
                         </blockquote>
@@ -118,6 +135,8 @@
             </div>
         </section>
         <!--/quotes-->
+    </div>
+    <div class="container features-container">
         <hr>
         <!--features-->
         <section class="features">
@@ -129,7 +148,8 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge bg-success">NEW!</span></h3>
+                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span
+                                class="badge bg-success">NEW!</span></h3>
                         <p>Serious Starmer would make a good PM</p>
                         <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
                     </div>
@@ -151,6 +171,8 @@
             </div>
         </section>
         <!--/features-->
+    </div>
+    <div class="container table-container">
         <!--table-->
         <section class="top-five">
             <h2 class="text-uppercase">Top 5 beers</h2>
@@ -186,7 +208,7 @@
             </table>
         </section>
         <!--/table-->
-    </article>
+    </div>
 
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog">
@@ -199,7 +221,8 @@
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
@@ -208,7 +231,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="confirm-password" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+                            <input type="password" class="form-control" id="confirm-password"
+                                placeholder="Confirm password">
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>
                     </form>
@@ -221,7 +245,7 @@
                 -->
             </div>
         </div>
-      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

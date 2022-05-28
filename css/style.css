@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+body {
+    background-color: lightblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alert-container {
+
+}
+
+.callout-container {
+    height: 100vh;
+    background: url(../images/bg2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.standout {
+    z-index: 1;
+}
+
+.jumbotron-header {
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+.spacer {
+    width: 150px;
+    border-top: 3px solid orangered;
+    margin: 0 auto;
+}
+
+.callout .lead {
+    color: whitesmoke;
+}
+
+.call-to-action {
+    font-weight: bold;
+    border-radius: 20px;
+    width: 160px;
+}
+
+.button-red {
+    color: azure;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.button-red:hover, 
+.button-red:active,
+.button-red:focus,
+.button-red:active:focus {
+    color: white;
+    background-color: rgb(165, 44, 0);
+    border-color: rgb(165, 44, 0);
+}
+
+.text-muted small {
+    font-size: 60%;
+    font-style: italic;
+    color: lightgrey;
+}
+
+.quotes-container {}
+
+.features-container {}
+
+.table-container {}
+
+.box-blue {
+    background-color: blue;
+}
+
+.box-red {
+    background-color: red;
+}
