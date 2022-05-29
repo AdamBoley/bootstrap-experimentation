@@ -14,8 +14,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <div class="container-fluid navalert-container">
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div class="alert alert-warning site-wide-alert">
+                        <p>
+                            <strong>Sale Now On!</strong> Get 12 months' supply of beer for the price of 1 for Labour
+                            voters,
+                            and 1 months' supply for the price of 12 for Tory voters
+                            <a href="/">Click here for details!</a> <small>Be honest, Tories, you can afford it</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">Beergate</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,24 +62,14 @@
                         <a href="#" class="nav-link">Sign In / Sign up</a>
                     </li>
                 </ul>
-                <p class="navbar-text my-auto mr-2 me-2 d-none d-lg-inline"><i>Great real ale delivered to your gate</i>
+                <p class="navbar-text my-auto mr-2 me-2 d-none d-lg-inline"><i>Great real ale delivered to your
+                        gate</i>
                 </p>
-                <a href="/login" class=" d-none d-lg-inline">Sign In / Sign up</a>
+                <a href="/login" class="d-none d-lg-inline btn call-to-action button-red">Sign In / Sign up</a>
             </div>
-        </div>
-    </nav>
-    <div class="container alert-container">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <p><strong>Sale Now On!</strong> Get 12 months' supply of beer for the price of 1 for Labour voters,
-                        and 1 months' supply for the price of 12 for Tory voters</p>
-                    <a href="/">Click here for details!</a>
-                    <p><small>Be honest, Tories, you can afford it</small></p>
-                </div>
-            </div>
-        </div>
+        </nav>
     </div>
+
     <div class="container-fluid callout-container">
         <!--callout-->
         <div class="opaque-overlay">&nbsp;</div>
@@ -85,7 +89,8 @@
                         <strong><mark> First one is on us!</mark></strong>
                     </p>
                     <!--strong and mark bold and highlight the text, s tags apply the strike-through style-->
-                    <button class="btn call-to-action button-red btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign
+                    <button class="btn call-to-action button-red btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#signUpModal">Sign
                         Up!</button>
                     <!--the btn and btn-success class style a basic button that also provides user-feedback-->
                     <p class="text-muted"><small>You must be over the age of 12, and not a Tory voter. Please drink very
@@ -94,119 +99,125 @@
                 </section>
             </div>
         </div>
-        
+
         <!--/callout-->
     </div>
-    <div class="container quotes-container">
-        <!--quotes-->
-        <section class="quotes">
-            <div class="row">
-                <div class="col-12 my-5">
-                    <h2 class="text-uppercase">Quotes:</h2>
+    <!--quotes-->
+    <div class="container-wrapper">
+        <div class="container quotes-container content-container">
+            <section class="quotes">
+                <div class="row">
+                    <div class="col-12 page-header">
+                        <h2 class="text-uppercase">Quotes:</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-xl-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 me-3 d-none d-sm-block">
-                            <img src="images/ks.jpg" alt="" class="img-thumbnail">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 me-3 d-none d-sm-block">
+                                <img src="images/ks.jpg" alt="" class="img-thumbnail">
+                            </div>
+                            <blockquote class="blockquote">
+                                <p>I've been turned into a certified beer lover! Goes well with a chicken korma before
+                                    returning to
+                                    work</p>
+                                <p>- Kier Starmer</p>
+                            </blockquote>
                         </div>
-                        <blockquote class="blockquote">
-                            <p>I've been turned into a certified beer lover! Goes well with a chicken korma before
-                                returning to
-                                work</p>
-                            <p>- Kier Starmer</p>
-                        </blockquote>
                     </div>
-                </div>
-                <div class="col-12 col-xl-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 me-3 d-none d-sm-block">
-                            <img src="images/bj.jpg" alt="" class="img-thumbnail">
+                    <div class="col-12 col-xl-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 me-3 d-none d-sm-block">
+                                <img src="images/bj.jpg" alt="" class="img-thumbnail">
+                            </div>
+                            <blockquote class="blockquote">
+                                <p>Beer is for plebs - I prefer wine and cheese personally, preferably at 4pm every
+                                    Friday
+                                    during a
+                                    lockdown</p>
+                                <p>- Boris Johnson</p>
+                            </blockquote>
                         </div>
-                        <blockquote class="blockquote">
-                            <p>Beer is for plebs - I prefer wine and cheese personally, preferably at 4pm every Friday
-                                during a
-                                lockdown</p>
-                            <p>- Boris Johnson</p>
-                        </blockquote>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--/quotes-->
+            </section>
+        </div>
     </div>
-    <div class="container features-container">
-        <hr>
-        <!--features-->
-        <section class="features">
-            <div class="row">
-                <div class="col-12 my-5">
-                    <h2 class="text-uppercase">Features</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span
-                                class="badge bg-success">NEW!</span></h3>
-                        <p>Serious Starmer would make a good PM</p>
-                        <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+    <!--/quotes-->
+    <!--features-->
+    <div class="container-wrapper container-wrapper-red">
+        <div class="container features-container content-container">
+            <section class="features">
+                <div class="row">
+                    <div class="col-12 page-header">
+                        <h2 class="text-uppercase">Features</h2>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
-                        <p>Bodger is useless</p>
-                        <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="feature">
+                            <h3><i class="fa-solid fa-gift d-none d-sm-block"></i> Feature 1 <span
+                                    class="badge bg-success">NEW!</span></h3>
+                            <p>Serious Starmer would make a good PM</p>
+                            <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="feature">
+                            <h3><i class="fa-solid fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
+                            <p>Bodger is useless</p>
+                            <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-md-none d-lg-block col-lg-4">
+                        <div class="feature">
+                            <h3><i class="fa-solid fa-circle-xmark d-none d-sm-block"></i> Feature 3</h3>
+                            <p>Every Tory is a criminal</p>
+                            <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="feature">
-                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
-                        <p>Every Tory is a criminal</p>
-                        <p><a href="" class="btn btn-sm btn-light">Read more</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--/features-->
+            </section>
+        </div>
     </div>
+    <!--/features-->
+    <!--table-->
     <div class="container table-container">
-        <!--table-->
-        <section class="top-five">
-            <h2 class="text-uppercase">Top 5 beers</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Beer</th>
-                        <th scope="col">Producer</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Golden Champion</td>
-                        <td>UK</td>
-                    </tr>
-                    <tr>
-                        <td>Ghost Ship</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>Hoegaarden</td>
-                        <td>Belgium</td>
-                    </tr>
-                    <tr>
-                        <td>Russian Tears</td>
-                        <td>Ukraine</td>
-                    </tr>
-                    <tr>
-                        <td>Fascism</td>
-                        <td>The Conservative Party</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <div class="content-container">
+            <section class="top-five">
+                <h2 class="text-uppercase">Top 5 beers</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Beer</th>
+                            <th scope="col">Producer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Golden Champion</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td>Ghost Ship</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Hoegaarden</td>
+                            <td>Belgium</td>
+                        </tr>
+                        <tr>
+                            <td>Russian Tears</td>
+                            <td>Ukraine</td>
+                        </tr>
+                        <tr>
+                            <td>Fascism</td>
+                            <td>The Conservative Party</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
         <!--/table-->
     </div>
 

@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
 
 body {
-    background-color: lightblue;
     font-family: 'Poppins', sans-serif;
-}
-
-.alert-container {
-
 }
 
 .callout-container {
@@ -79,11 +74,99 @@ body {
     color: lightgrey;
 }
 
-.quotes-container {}
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
 
-.features-container {}
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-.table-container {}
+.navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #ffc200;
+    border-color: #ffc200;
+}
+
+.site-wide-alert p {
+    margin-bottom: 0;
+}
+
+.site-wide-alert small {
+    font-size: xx-small;
+}
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.container-wrapper-red {
+    background-color: orangered;
+    color: white;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    font-weight: bold;
+    min-width: 100px;
+    margin-top: 10px;
+    color: orangered;
+    border-radius: 15px;
+}
+
+
 
 .box-blue {
     background-color: blue;
